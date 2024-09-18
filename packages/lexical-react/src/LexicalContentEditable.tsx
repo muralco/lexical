@@ -10,6 +10,7 @@ import type {Props as ElementProps} from './shared/LexicalContentEditableElement
 import type {LexicalEditor} from 'lexical';
 
 import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
+import * as React from 'react';
 import {forwardRef, Ref, useLayoutEffect, useState} from 'react';
 
 import {ContentEditableElement} from './shared/LexicalContentEditableElement';
