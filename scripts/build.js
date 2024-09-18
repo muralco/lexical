@@ -75,8 +75,6 @@ const wwwMappings = {
   'prismjs/components/prism-swift': 'prism-swift',
   'prismjs/components/prism-typescript': 'prism-typescript',
   'react-dom': 'ReactDOM',
-  // The react entrypoint in fb includes the jsx runtime
-  'react/jsx-runtime': 'react',
 };
 
 /**
@@ -227,7 +225,7 @@ async function build(
               tsconfig: path.resolve('./tsconfig.build.json'),
             },
           ],
-          ['@babel/preset-react', {runtime: 'automatic'}],
+          ['@babel/preset-react', {runtime: 'classic'}],
         ],
       }),
       {
